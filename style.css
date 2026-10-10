@@ -8,7 +8,8 @@ body {
 input {
   font-family: 'Press Start 2P', cursive;
   color: #757575;
-  width: 384px;
+  width: 100%;
+  max-width: 384px;
   height: 60px;
   font-size: 35px;
   text-align:  right;
@@ -45,7 +46,8 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
-  width: 384px;
+  width: 100%;
+  max-width: 384px;
 }
 
 .zero-btn {
