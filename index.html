@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="calculator-box">
+		<input type="text" id="screen" readonly placeholder="0">
+		<div class="button-container">
+			<button type="submit" class="buttonA" onclick="clearScreen()">C</button>
+			<button type="submit" class="buttonB" onclick="delButton()">⌫</button>
+			<button type="submit" class="buttonB" onclick="operationInput('/')">÷</button>
+			
+			
+			<button type="submit" class="buttonC" onclick="numberInput('7')">7</button>
+			<button type="submit" class="buttonC" onclick="numberInput('8')">8</button>
+			<button type="submit" class="buttonC" onclick="numberInput('9')">9</button>
+			<button type="submit" class="buttonB" onclick="operationInput('*')">×</button>
+			
+			<button type="submit" class="buttonC" onclick="numberInput('4')">4</button>
+			<button type="submit" class="buttonC" onclick="numberInput('5')">5</button>
+			<button type="submit" class="buttonC" onclick="numberInput('6')">6</button>
+			<button type="submit" class="buttonB" onclick="operationInput('-')">-</button>
+			
+			<button type="submit" class="buttonC" onclick="numberInput('1')">1</button>
+			<button type="submit" class="buttonC" onclick="numberInput('2')">2</button>
+			<button type="submit" class="buttonC" onclick="numberInput('3')">3</button>
+			<button type="submit" class="buttonB" onclick="operationInput('+')">+</button>
+			
+			<button type="submit" class="buttonC zero-btn" onclick="numberInput('0')">0</button>
+			<button type="submit" class="buttonC" onclick="numberInput('.')">.</button>
+			<button type="submit" class="buttonB" onclick="count()">=</button>
+			
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
